@@ -1,0 +1,10 @@
+﻿	public class Assembly.Class1
+		- public event System.EventHandler EventThatWillBeRemoved
+		+ public int get_PropertyThatWillChangeType()
+		+ public string MethodThatWillChangeReturnType()
+		+ public void MethodThatWillGetNewParameter(Int32 x,String y)
+		- public string get_PropertyThatWillBeRemoved()
+		- public string get_PropertyThatWillChangeType()
+		- public void MethodThatWillBeRemoved()
+		- public void MethodThatWillGetNewParameter(Int32 x)
+		- public bool MethodThatWillChangeReturnType()

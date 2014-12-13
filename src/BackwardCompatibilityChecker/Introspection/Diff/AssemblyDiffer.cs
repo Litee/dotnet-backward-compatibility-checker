@@ -6,7 +6,7 @@ using Mono.Cecil;
 
 namespace BackwardCompatibilityChecker.Introspection.Diff
 {
-    public class AssemblyDiffer
+    internal class AssemblyDiffer
     {
         readonly AssemblyDefinition myV1;
         readonly AssemblyDefinition myV2;

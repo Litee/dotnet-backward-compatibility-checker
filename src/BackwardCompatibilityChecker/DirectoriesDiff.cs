@@ -74,7 +74,7 @@ namespace BackwardCompatibilityChecker
                         }
                     }
 
-                    var printer = new DiffPrinter();
+                    var printer = new DiffPrinter(Console.Out);
                     printer.Print(diff);
                 }
             }
