@@ -2,8 +2,11 @@
 
 namespace Assembly
 {
-    public class Class1
+    public class ClassWithChangingMembers
     {
+        public int FieldThatWillBeRemoved;
+        public int FieldThatWillChangeItsType;
+
         public event EventHandler EventThatWillBeRemoved;
 
         public string PropertyThatWillBeRemoved
@@ -26,5 +29,13 @@ namespace Assembly
         {
             return false;
         }
+    }
+
+    public class ClassThatWillChangeItsBaseClass : BaseClass
+    {
+    }
+
+    public class BaseClass
+    {
     }
 }

@@ -1,5 +1,10 @@
-﻿	public class Assembly.Class1
+﻿	Added 1 public type/s
+		+ public class Assembly.NewBaseClass
+	public class Assembly.ClassWithChangingMembers
 		- public event System.EventHandler EventThatWillBeRemoved
+		+ public string FieldThatWillChangeItsType
+		- public int FieldThatWillBeRemoved
+		- public int FieldThatWillChangeItsType
 		+ public int get_PropertyThatWillChangeType()
 		+ public string MethodThatWillChangeReturnType()
 		+ public void MethodThatWillGetNewParameter(Int32 x,String y)
@@ -8,3 +13,5 @@
 		- public void MethodThatWillBeRemoved()
 		- public void MethodThatWillGetNewParameter(Int32 x)
 		- public bool MethodThatWillChangeReturnType()
+	public class Assembly.ClassThatWillChangeItsBaseClass
+		Base type changed: Assembly.BaseClass -> Assembly.NewBaseClass

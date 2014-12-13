@@ -1,7 +1,9 @@
 ﻿namespace Assembly
 {
-    public class Class1
+    public class ClassWithChangingMembers
     {
+        public string FieldThatWillChangeItsType;
+
         public int PropertyThatWillChangeType
         {
             get { return 0; }
@@ -15,5 +17,16 @@
         public void MethodThatWillGetNewParameter(int x, string y)
         {
         }
+    }
+
+    public class ClassThatWillChangeItsBaseClass : NewBaseClass
+    {
+    }
+
+    public class BaseClass
+    {
+    }
+    public class NewBaseClass
+    {
     }
 }
