@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using ApprovalTests;
+using ApprovalTests.Reporters;
 using BackwardCompatibilityChecker.Introspection.Diff;
 using BackwardCompatibilityChecker.Introspection.Query;
 using Mono.Cecil;
@@ -7,6 +8,7 @@ using NUnit.Framework;
 
 namespace BackwardCompatibilityChecker.Tests
 {
+    [UseReporter(typeof(WinMergeReporter))]
     [TestFixture]
     public class AssemblyDifferTests
     {
