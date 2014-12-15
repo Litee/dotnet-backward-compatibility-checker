@@ -22,6 +22,13 @@
         }
     }
 
+    public class NewClass
+    {
+    }
+    public interface NewInterface
+    {
+    }
+
     public class ClassThatWillChangeItsBaseClass : NewBaseClass
     {
     }

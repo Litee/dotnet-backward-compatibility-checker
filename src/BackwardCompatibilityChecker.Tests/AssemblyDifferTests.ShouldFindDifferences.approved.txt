@@ -1,6 +1,8 @@
 ﻿	Removed 1 public type/s
 		- public class Assembly.ClassThatGetsGenericParameter
-	Added 2 public type/s
+	Added 4 public type/s
+		+ public class Assembly.NewClass
+		+ public interface Assembly.NewInterface
 		+ public class Assembly.NewBaseClass
 		+ public class Assembly.ClassThatGetsGenericParameter<T>
 	public class Assembly.ClassWithChangingMembers
