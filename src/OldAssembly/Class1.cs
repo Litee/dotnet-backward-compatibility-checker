@@ -29,6 +29,10 @@ namespace Assembly
         {
             return false;
         }
+
+        public void MethodThatWillGetNewParameterWithDefaultValue(int x)
+        {
+        }
     }
 
     public class ClassThatWillChangeItsBaseClass : BaseClass
@@ -37,5 +41,10 @@ namespace Assembly
 
     public class BaseClass
     {
+    }
+
+    public enum EnumWithReorderedItems
+    {
+        One, Two
     }
 }

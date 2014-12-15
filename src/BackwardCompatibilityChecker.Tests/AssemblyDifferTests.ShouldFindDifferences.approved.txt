@@ -8,10 +8,17 @@
 		+ public int get_PropertyThatWillChangeType()
 		+ public string MethodThatWillChangeReturnType()
 		+ public void MethodThatWillGetNewParameter(Int32 x,String y)
+		+ public void MethodThatWillGetNewParameterWithDefaultValue(Int32 x,String y)
 		- public string get_PropertyThatWillBeRemoved()
 		- public string get_PropertyThatWillChangeType()
 		- public void MethodThatWillBeRemoved()
 		- public void MethodThatWillGetNewParameter(Int32 x)
 		- public bool MethodThatWillChangeReturnType()
+		- public void MethodThatWillGetNewParameterWithDefaultValue(Int32 x)
 	public class Assembly.ClassThatWillChangeItsBaseClass
 		Base type changed: Assembly.BaseClass -> Assembly.NewBaseClass
+	public enum Assembly.EnumWithReorderedItems
+		+ public const Assembly.EnumWithReorderedItems Two - Value: 0
+		+ public const Assembly.EnumWithReorderedItems One - Value: 1
+		- public const Assembly.EnumWithReorderedItems One - Value: 0
+		- public const Assembly.EnumWithReorderedItems Two - Value: 1

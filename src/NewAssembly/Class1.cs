@@ -17,6 +17,9 @@
         public void MethodThatWillGetNewParameter(int x, string y)
         {
         }
+        public void MethodThatWillGetNewParameterWithDefaultValue(int x, string y = "abc")
+        {
+        }
     }
 
     public class ClassThatWillChangeItsBaseClass : NewBaseClass
@@ -28,5 +31,10 @@
     }
     public class NewBaseClass
     {
+    }
+
+    public enum EnumWithReorderedItems
+    {
+        Two, One
     }
 }

@@ -738,7 +738,7 @@ namespace BackwardCompatibilityChecker.Introspection.Types
                    f1.IsAssembly == f2.IsAssembly &&
                    f1.IsPrivate == f2.IsPrivate &&
                    f1.IsStatic == f2.IsStatic &&
-                   f1.HasConstant == f2.HasConstant &&
+                   ((f1.HasConstant && f2.HasConstant && f1.Constant == f2.Constant) || (!f1.HasConstant && !f2.HasConstant)) &&
                    f1.IsInitOnly == f2.IsInitOnly &&
                    f1.Name == f2.Name &&
                    f1.FieldType.FullName == f2.FieldType.FullName;
