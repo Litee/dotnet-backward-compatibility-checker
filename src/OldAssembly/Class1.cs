@@ -38,6 +38,9 @@ namespace Assembly
     public class ClassThatWillChangeItsBaseClass : BaseClass
     {
     }
+    public class ClassThatGetsGenericParameter
+    {
+    }
 
     public class BaseClass
     {

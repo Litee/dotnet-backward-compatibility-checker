@@ -26,9 +26,14 @@
     {
     }
 
+    public class ClassThatGetsGenericParameter<T>
+    {
+    }
+
     public class BaseClass
     {
     }
+
     public class NewBaseClass
     {
     }

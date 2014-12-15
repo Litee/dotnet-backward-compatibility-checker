@@ -1,5 +1,8 @@
-﻿	Added 1 public type/s
+﻿	Removed 1 public type/s
+		- public class Assembly.ClassThatGetsGenericParameter
+	Added 2 public type/s
 		+ public class Assembly.NewBaseClass
+		+ public class Assembly.ClassThatGetsGenericParameter<T>
 	public class Assembly.ClassWithChangingMembers
 		- public event System.EventHandler EventThatWillBeRemoved
 		+ public string FieldThatWillChangeItsType
